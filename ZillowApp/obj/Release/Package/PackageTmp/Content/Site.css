@@ -1,0 +1,450 @@
+﻿html {
+    height: 100%;
+}
+body {
+    background-color: $default-grey;
+    line-height: 1.375em;
+    font-size: 0.8em;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    min-height: 100%;
+    margin:auto 0;
+    font-family: georgia,serif;
+}
+
+/*styles for heading*/
+a{
+    text-decoration:none;
+}
+*:focus {
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.25em;
+}
+h1,
+.h1 {
+    font-size: 3em;
+}
+h2,
+.h2 {
+    font-size: 2.25em; 
+}
+h3,
+.h3 {
+    font-size: 1.75em;
+}
+h4,
+.h4,p,.error-container {
+    font-size: 1.125em;
+}
+.title,.popular-localities {
+    font-size: 1.17em;
+}
+.sub-title {
+    font-size: 1.12em;
+}
+.caption {
+    font-size: 0.7em;
+}
+
+.xx-large {
+    font-size: 3em;
+}
+.x-large {
+    font-size: 2.25em;
+}
+.large {
+    font-size: 1.75em;
+}
+.xx-medium {
+    font-size: 1.5em;
+}
+.x-medium {
+    font-size: 1.2em;
+}
+.medium {
+    font-size: 1em;
+}
+.small {
+    font-size: 0.8em;
+}
+.x-small {
+    font-size: 0.5em;
+}
+.xx-small {
+    font-size: 0.2em;
+}
+/*for position*/
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.relative {
+    position: relative;
+}
+.show, .block {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+.inline-block {
+    display: inline-block;
+}
+.table {
+    display: table;
+}
+
+/*for text*/
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.cursive {
+    font-family: 'Pacifico', cursive;
+}
+.bold {
+    font-weight: 800;    
+}
+
+/*for list's*/
+ul.inline-list,
+ul.block-list,
+ul.inline-block-list {
+    padding: 0;
+}
+ul.inline-list li,
+ul.block-list li,
+ul.inline-block-list li {
+    text-decoration: none;
+}
+ul.inline-list li{
+    display: inline;
+}
+ul.block-list li{
+    display: block;
+}
+ul.inline-block-list li{
+    display: inline-block;
+}
+
+/*floation*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.no-float {
+    float: none;
+}
+
+/*for margin*/
+.no-margin {
+    margin: 0 !important;
+}
+.default-margin-tp-btm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.default-margin-lft-rt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*for padding*/
+.no-padding {
+    padding: 0 !important;
+}
+.default-padding-tp-btm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.default-padding-lft-rt {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*custom rows & cols*/
+.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.row {
+    margin: 0;
+    padding: 0;
+}
+.fill-height {
+    height: 100%;
+    min-height: 100%;
+    display:none;
+}
+.fill-width {
+    width: 100%;
+    min-width: 100%
+}
+.table-row {
+    display: table;
+}
+.table-row [class^="col-"] {
+    display: table-cell;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex: 0 1 auto;
+}
+.flex-row.strech {
+    align-items: stretch;
+}
+.flex-row [class^="col-"] {
+    box-sizing: border-box;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.col-11 {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+}
+.col-10 {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+}
+.col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+.col-8 {
+  flex-basis: 66.66666667%;
+  max-width: 66.66666667%;
+}
+.col-7 {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+}
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-5 {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+}
+.col-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-2 {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+}
+.col-1 {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+/*buttons css*/
+.btn {
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* master-page css */
+.main-header {
+    height: 100px;
+    text-align:center;
+}
+.main-content {
+    
+}
+.main-search-container .flex-cell{
+    flex: 1;
+}
+
+
+/* search panel*/
+.main-search-text {
+    width: 100%;
+    height: 50px;
+    border: solid;
+    border-color: #cfcfcf;
+    border-width: 0 0 1px 0;
+    font-size: 2em;
+}
+.main-search-btn {
+    padding: 9px 0;
+}
+
+
+/**/
+.popular-localities-container .title-container {
+    border: solid;
+    border-color: #cfcfcf;
+    border-width: 0 0 1px 0;
+    margin: 5px 0;
+    padding: 28px 0;
+}
+.popular-localities-container .title-container .title {
+    padding: 0 7px 8px 0;
+    background: #ffffff;
+    z-index: 5;
+}
+.popular-localities-container .popular-localities {
+    margin: 28px 0 0 0;
+}
+.popular-localities-container .popular-localities li {
+    padding: 8px;
+}
+.popular-localities-container .popular-localities li:hover {
+    cursor: pointer;
+}
+.popular-localities-container .popular-localities li.active {
+    background: #7323DC;
+    color: #ffffff;
+}
+
+
+/**/
+.search-list-container {
+    border: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+}
+.search-list-container .search-tooltip {
+    left: -31px;
+    top: 90px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #cfcfcf transparent transparent;
+    transition: top 0.5s;
+
+}
+.search-list-container .search-list {
+    margin: 28px 0 0 0;
+}
+.bton {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.bton-success{
+    background-color:lightblue;
+}
+.bton-red{
+    background-color:lightcoral;
+}
+.bton-warning{
+    background-color:lightyellow;
+}
+.card {
+    background:#FFF;
+    border:1px solid #AAA;
+    border-bottom:3px solid #BBB;
+    padding:0;
+    margin:15px;
+    overflow:hidden;
+}
+.card h1 {
+    margin:0;
+    padding:10px;
+    padding-bottom:0;
+}
+.card p {
+    margin:0;
+    padding:10px;
+}
+.card-image {
+    width:100%;
+    height:200px;
+    padding:0;
+    margin:0;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+
+/*@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .site-content{
+        width:60%;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .site-content{
+        width:80%;
+    }
+}*/

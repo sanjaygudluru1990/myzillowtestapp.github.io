@@ -1,0 +1,21 @@
+﻿<div class="flex-row">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8">
+        <div class="flex-row">
+            <div class="col-12">
+                <h2>OOPS! Error Processing Your Request Please Check Below For Fix:</h2>
+                <div class="error-container">
+                    <p><strong>Status Code:</strong>{{exceptionvm.errObj.ZillowErrorStatusCode}}</p>
+                    <p><strong>Error Message:</strong>{{exceptionvm.errObj.ErrorMessage}}</p>
+                    <p><strong>Error Resolution:</strong>{{exceptionvm.errObj.ErrorResolution}}</p>
+                </div>
+                <div><a class="bton bton-red" ui-sref="home">Back To Search</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+
+    </div>
+</div>
